@@ -1,0 +1,10 @@
+services:
+  flutter:
+    build: .
+    privileged: true
+    volumes:
+      - .:/app
+      - /dev/bus/usb:/dev/bus/usb
+    environment:
+      - ANDROID_SDK_ROOT=/opt/android-sdk
+    command: tail -f /dev/null
