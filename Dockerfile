@@ -11,13 +11,7 @@ RUN apt-get update && apt-get install -y \
     libglu1-mesa \
     default-jdk \
     wget \
-    cmake \
-    clang \
     build-essential \
-    ninja-build \
-    pkg-config \
-    libgtk-3-dev \
-    liblzma-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Flutter
